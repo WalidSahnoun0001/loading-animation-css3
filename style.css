@@ -1,0 +1,55 @@
+body {
+    background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+}
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loading span {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ff4d4d;
+    border-radius: 50%;
+    margin: 6px;
+    box-shadow: 0 0 5px .5px #ff4d4d;
+    transition: animation .5s;
+}
+.loading span:nth-child(1) { 
+    animation: zoom 1s ease-in-out infinite;
+}
+.loading span:nth-child(2) {
+    animation: zoom 1s ease-in-out .5s infinite;
+}
+.loading span:nth-child(3) {
+    animation: zoom 1s ease-in-out 1s infinite;
+}
+.loading span:nth-child(4) {
+    animation: zoom 1s ease-in-out 1.5s infinite;
+}
+.loading span:nth-child(5) {
+    animation: zoom 1s ease-in-out 2s infinite;
+}
+
+
+
+
+@keyframes zoom {
+
+    0%, 100%{
+        
+        transform: scale(1.0);
+
+    } 50% {
+       
+        transform: scale(1.8);
+        box-shadow: 0 0 24px 1px #ff4d4d;
+        
+    }
+
+
+}
+
